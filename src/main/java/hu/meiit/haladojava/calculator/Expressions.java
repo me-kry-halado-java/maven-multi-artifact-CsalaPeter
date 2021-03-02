@@ -39,12 +39,12 @@ public class Expressions {
         double operand1;
         double operand2;
         if (tokens.length == 2) {
-            operand1 = Double.parseDouble(tokens[0]);
-            operand2 = Double.parseDouble(tokens[1]);
+            operand1 = Double.valueOf(tokens[0]);
+            operand2 = Double.valueOf(tokens[1]);
         }
         else if (tokens.length == 3) {
-            operand1 = Double.parseDouble(tokens[0]);
-            operand2 = Double.parseDouble(tokens[2]);
+            operand1 = Double.valueOf(tokens[0]);
+            operand2 = Double.valueOf(tokens[2]);
         }
         else {
             throw new InvalidInputException();
