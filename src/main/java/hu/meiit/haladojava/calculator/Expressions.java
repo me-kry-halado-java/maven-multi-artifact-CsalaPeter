@@ -68,15 +68,6 @@ public class Expressions {
         }
     }
 
-    private static boolean isAcceptedOperator(char operator) {
-        for(char acceptedOperator : acceptedOperations) {
-            if (operator == acceptedOperator) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     private static Operations convertOperatorToOperation(char operator) throws InvalidInputException{
         switch (operator) {
             case '+':
